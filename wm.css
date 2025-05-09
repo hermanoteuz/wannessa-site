@@ -9,6 +9,7 @@
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #000;
+    overflow-x: hidden;
   }
   
   /* Cabeçalho */
@@ -22,6 +23,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
   }
   
   /* Título */
@@ -35,6 +40,9 @@
     display: flex;
     gap: 20px;
     list-style: none;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   
   /* Links do menu */
@@ -156,9 +164,11 @@
     }
   
     .menu {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0 10px; /* adiciona margem interna pequena */
+        box-sizing: border-box;
     }
   
     .topo h1 {
