@@ -45,6 +45,65 @@
     transition: color 0.3s ease;
   }
   
+/* Layout em duas colunas lado a lado */
+.dupla {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 5%;
+  }
+  
+  /* Inversão da ordem: texto à esquerda e imagem à direita */
+  .dupla.invertida {
+    flex-direction: row-reverse;
+  }
+  
+  /* Div que contém imagem */
+  .dupla .imagem {
+    flex: 1 1 45%;
+  }
+  
+  .dupla .imagem img {
+    width: 100%;            /* Garante que a imagem ocupe o container */
+    max-width: 300px;       /* Reduz a largura máxima da imagem */
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  
+  /* Div que contém texto */
+  .dupla .texto {
+    flex: 1 1 45%;
+    text-align: left;
+  }
+  
+  .dupla .texto h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .dupla .texto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
+  
+
   /* Hover do menu */
   .menu li a:hover {
     color: #a6795b;
