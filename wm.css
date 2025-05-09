@@ -1,0 +1,77 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo do site */
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #000;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #fdf6ef; /* Bege claro */
+    padding: 20px 5%;
+  }
+  
+  /* Container do topo com título e menu lado a lado */
+  .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Título */
+  .topo h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  /* Menu */
+  .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  /* Links do menu */
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover do menu */
+  .menu li a:hover {
+    color: #a6795b;
+  }
+  
+  /* Estilo geral das seções */
+  section {
+    padding: 60px 5%;
+    text-align: center;
+  }
+  
+  /* Alternância de cores com base na ordem das seções */
+  body > section:nth-of-type(odd) {
+    background-color: #ffffff; /* branco */
+    color: #000;
+  }
+  
+  body > section:nth-of-type(even) {
+    background-color: #fdf6ef; /* bege claro */
+    color: #000;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 40px 5%;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
