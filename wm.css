@@ -134,3 +134,46 @@
     color: #555;
   }
   
+  /* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .dupla {
+      flex-direction: column; /* Empilha imagem e texto em coluna */
+      text-align: center;
+    }
+  
+    .dupla.invertida {
+      flex-direction: column; /* Também empilha */
+    }
+  
+    .dupla .imagem,
+    .dupla .texto {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .dupla .texto {
+      text-align: center;
+    }
+  
+    .menu {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .topo h1 {
+      font-size: 1.4em;
+      text-align: center;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
